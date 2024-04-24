@@ -23,6 +23,8 @@
   width: 80%; 
   margin: 0 auto; 
   padding: 0 20px; 
+  justify-content: center;
+
 }
 
 .carruselContainer {
@@ -30,6 +32,8 @@
   overflow-x: auto;
   display: flex;
   padding: 10px 0;
+  justify-content: center;
+
 }
 
 .carruselContainer::-webkit-scrollbar-thumb {
@@ -96,6 +100,7 @@
   .carrusel {
     width: 100%; /* Ändern der Breite für die volle Breite auf kleineren Bildschirmen */
     padding: 0; /* Entfernen des seitlichen Paddings */
+    
   }
 
   .gridItemContent {
