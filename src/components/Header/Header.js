@@ -8,7 +8,7 @@ const Header = () =>  {
             <div className={styles["container-fluid"]}>
                 <Loginbar />
                 <div className={styles["logo"]}>
-                    <img src="/logo.png" alt="FilmRausch Logo" className={styles["logoSize"]} />
+                    <img src="https://techmocker.github.io/Filmrausch/logo.png" alt="FilmRausch Logo" className={styles["logoSize"]} />
                 </div>
             </div>
         </>
