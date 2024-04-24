@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Filmrausch/static/css/main.55460702.css",
-    "main.js": "/Filmrausch/static/js/main.76723656.js",
+    "main.js": "/Filmrausch/static/js/main.fcafcb8e.js",
     "static/js/453.7e51e35a.chunk.js": "/Filmrausch/static/js/453.7e51e35a.chunk.js",
     "static/media/pageloader.mp4": "/Filmrausch/static/media/pageloader.71f68b8de1479aa8724d.mp4",
     "static/media/home2.jpg": "/Filmrausch/static/media/home2.2140ec3a328fb6035a95.jpg",
     "static/media/trebuc.ttf": "/Filmrausch/static/media/trebuc.8dc5d2dd53924baa495c.ttf",
     "index.html": "/Filmrausch/index.html",
     "main.55460702.css.map": "/Filmrausch/static/css/main.55460702.css.map",
-    "main.76723656.js.map": "/Filmrausch/static/js/main.76723656.js.map",
+    "main.fcafcb8e.js.map": "/Filmrausch/static/js/main.fcafcb8e.js.map",
     "453.7e51e35a.chunk.js.map": "/Filmrausch/static/js/453.7e51e35a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55460702.css",
-    "static/js/main.76723656.js"
+    "static/js/main.fcafcb8e.js"
   ]
 }
