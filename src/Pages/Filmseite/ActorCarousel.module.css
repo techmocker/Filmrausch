@@ -18,6 +18,7 @@
 .actortitle {
   text-align: center;
 }
+
 .carrusel {
   width: 80%; 
   margin: 0 auto; 
@@ -36,7 +37,6 @@
   border-radius: 5px;
   cursor: grab;
 }
-
 
 .gridItemContent {
   flex: 0 0 auto; 
@@ -83,3 +83,39 @@
   transform: scale(1.1);
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .ueberschrift {
+    padding: 10px; /* Anpassung des Paddings für kleinere Bildschirme */
+  }
+
+  .introH1 {
+    max-width: 80%; /* Vergrößern der maximalen Breite für kleinere Bildschirme */
+  }
+
+  .carrusel {
+    width: 100%; /* Ändern der Breite für die volle Breite auf kleineren Bildschirmen */
+    padding: 0; /* Entfernen des seitlichen Paddings */
+  }
+
+  .gridItemContent {
+    margin-right: 0; /* Entfernen des rechten Abstands für die Elemente auf kleineren Bildschirmen */
+  }
+
+  .gridItem {
+    margin: 10px; /* Reduzieren des Abstands zwischen den Elementen auf kleineren Bildschirmen */
+  }
+
+  .gridItem img {
+    height: 200px; /* Verkleinern der Bildhöhe für kleinere Bildschirme */
+  }
+
+  .titleContainer {
+    height: auto; /* Anpassen der Höhe für kleinere Bildschirme */
+  }
+}
+
+  .actortitle {
+    font-size: 20px;
+    margin-bottom: 1px;
+  }

@@ -1,109 +1,147 @@
+/* Breite der Scrollleiste */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Hintergrundfarbe der Scrollleiste */
 ::-webkit-scrollbar-track {
-  /*background-color: #f1f1f1;*/
+  /*background-color: #f1f1f1;*/ 
 }
 
-/* Farbe des Scrollbalkens */
 ::-webkit-scrollbar-thumb {
+  /* Farbe des Scrollbalkens */
   background-color: #888;
   border-radius: 5px;
-  margin: 20px;
-  padding: 1%;
 }
+
+/* Ändern des Aussehens des Scrollbalkens, wenn er aktiv ist */
 
 .carousel {
   display: flex;
   justify-content: center;
 }
-.carouselContainer {
-  width: 60%;
-  overflow-x: auto;
-  display: flex;
-  gap: 20px;
-  padding: 2%;
-}
 .carouselContainer::-webkit-scrollbar-thumb {
-  background-color: rgba(252, 85, 2, 0.548);
+  background-color: rgba(252, 123, 2, 0.333);
   border-radius: 5px;
   cursor: grab;
+}
+.carouselContainer {
+  width: 100%;
+  overflow-x: auto; /* Scrollen erlauben */
+  display: flex; /* Flexbox verwenden */
+  gap: 10px; /* Abstand zwischen Elementen */
+  padding: 2%; /* Innenabstand anpassen */
 }
 
 .ueberschrift {
   color: #ffffff;
   text-align: center;
-  text-shadow: rgba(252, 85, 2, 0.785) 0px 0 10px;
+  text-shadow: rgba(252, 102, 2, 0.785) 0px 0 10px;
   padding: 20px;
-  margin: 20px auto 1px;
+  margin-bottom: 1px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .introH1 {
   border: 1px solid rgba(40, 252, 2, 0);
   border-radius: 5px;
-  box-shadow: rgba(252, 85, 2, 0.785) 0px 0 10px;
-  padding-top: 10px;
+  box-shadow: rgba(252, 102, 2, 0.785) 0px 0 10px;
+  padding-top: 1px;
   max-width: 40%;
-  margin: 0 auto;
+}
+
+.beschreibung {
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinear elementos al centro */
 }
 
 .titleContainer {
-  color: #ffffff;
+  width: 100%;
   text-align: center;
   height: 50px;
 }
 
 .releasedateContainer {
+  width: 100%;
   text-align: center;
+  margin-top: 5px;
 }
 
 .releasedate {
 }
 
+.gridItem img {
+  max-width: 100%; /* Die Breite des Bildes wird auf die Breite des Elternelements beschränkt */
+  max-height: 100%; /* Die Höhe des Bildes wird auf die Höhe des Elternelements beschränkt */
+  border-radius: 5px;
+}
+
 .gridItem {
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  position: relative; /* Position relativ für absolute Positionierung des Bildes */
+  width: 100px; /* Breite des Grid-Elements */
+  height: 170px; /* Höhe des Grid-Elements */
+  overflow: hidden; /* Überlauf verstecken, um das Bild innerhalb des Rahmens zu halten */
 }
 
 .gridItem img {
-  margin: auto;
-  height: 250px;
-  border-radius: 5px;
+  position: absolute; /* Position absolut, um das Bild innerhalb des Grid-Elements zu positionieren */
+  top: 0; /* Bild oben ausrichten */
+  left: 0; /* Bild links ausrichten */
+  right: 0; /* Bild rechts ausrichten */
+  bottom: 0; /* Bild unten ausrichten */
+  margin: auto; /* Zentrierung des Bildes */
 }
+
 
 /* Item Container Poster/Titel/Beschreibung */
-.gridItemContent {
-  flex: 0 0 auto; /* Evitar que los elementos se expandan para ajustarse */
-  width: 200px; /* Ancho fijo de cada elemento */
-  background-color: rgba(85, 85, 85, 0);
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column; /* Cambiar dirección de la flexbox a columna */
-  align-items: center; /* Alinear elementos al centro */
-  border-radius: 5px;
-  border: 0.5px solid rgb(252, 156, 2);
-  color: inherit !important; /* Behält die Standardfarbe des Textes bei */
-  text-decoration: none !important; /* Entfernt die Unterstreichung */
-}
-
-/* Kompletter Container Hintergrund */
 .gridContainer {
   margin: 0 auto;
-  width: 80%;
-  display: flex; /* Utilizar flexbox para el contenedor principal */
-  flex-wrap: nowrap; /* No permitir que se envuelva en filas */
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  gap: 20px; /* Espacio entre elementos */
+  width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
   padding: 1%;
-  justify-content: flex-start; /* Alinear elementos a la izquierda */
+  justify-content: flex-start;
+}
+
+.gridItemContent {
+  flex: 0 0 auto;
+  width: 150px; /* Anpassen der Breite der Grid-Elemente */
+  background-color: rgba(85, 85, 85, 0.3);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: 0.5px solid rgba(252, 102, 2, 0.514);
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 .gridItemContent:hover {
   cursor: pointer;
-  transform: scale(1.04);
+  transform: scale(1.05);
   transition: transform 0.3s ease;
-  box-shadow: rgb(252, 144, 2) 0px 0 10px;
+  box-shadow: rgba(252, 123, 2, 0.785) 0px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+    width: 100%; /* Volle Breite auf kleineren Bildschirmen */
+    padding: 1%; /* Weniger Innenabstand */
+  }
+
+  .gridItemContent {
+    width: 120px; /* Kleinere Breite für kleinere Bildschirme */
+  }
+}
+.gridContainer {
+  width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  padding: 1%; /* Weniger Innenabstand */
 }

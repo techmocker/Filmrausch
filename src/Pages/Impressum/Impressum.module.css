@@ -58,3 +58,28 @@
   color: #888;
   text-align: center;
 }
+
+/* Media Queries für die mobile Ansicht */
+@media screen and (max-width: 768px) {
+  .impressum {
+    justify-content: center; /* Zentrieren der Abschnitte */
+  }
+
+  .section {
+    flex: 1 1 100%; /* Vollständige Breite für die Abschnitte */
+    margin: 30px; /* Verringern des Seitenabstands */
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* Eine Spalte für den Inhalt */
+  }
+
+  .platform {
+    margin-top: 20px; /* Reduzieren des oberen Abstands */
+  }
+
+  .platform h2,
+  .platform p {
+    text-align: left; /* Links ausrichten */
+  }
+}

@@ -31,7 +31,7 @@ const PopularMovies = () => {
 
       <div className={styles.gridContainer}>
         {movies.map((movie) => (
-          <Link to={`/filmseite/${movie.id}`} key={movie.id}>
+          <Link to={`/filmrausch/filmseite/${movie.id}`} key={movie.id}>
             <div className={styles.gridItemContent}>
               <div className={styles.gridItem}>
                 <img

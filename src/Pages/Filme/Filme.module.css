@@ -103,6 +103,10 @@
     align-items: center; /* Zentriert die Elemente vertikal */
   }
 
+  .ueberschrift {
+    font-size: 25px;
+  }
+
   .gridItem img {
     height: 200px;
   }

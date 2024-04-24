@@ -147,8 +147,8 @@ const Filmseite = () => {
             <p className={styles.genres}>Genres: {movie.genres && movie.genres.map(genre => genre.name).join(', ')}</p>
           </div>
             <div className={styles.backlinkContainer}>
-              <Link to="/filme" className={styles.backlink}>Zurück zu Filme</Link>
-              <Link to="/suche" className={styles.backlink}>Suche weitere Filme</Link>
+              <Link to="filmrausch/filme" className={styles.backlink}>Zurück zu Filme</Link>
+              <Link to="filmrausch/suche" className={styles.backlink}>Suche weitere Filme</Link>
             </div>
         </div>
       </div>

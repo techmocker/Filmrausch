@@ -15,7 +15,6 @@ const CarruselTV = () => {
     fetchSeriesData();
   }, []);
 
-  // Función para formatear la fecha en formato alemán
   const formatDateGerman = (dateString) => {
     const options = { year: "numeric", month: "2-digit", day: "2-digit" };
     return new Date(dateString).toLocaleDateString("de-DE", options);
@@ -34,7 +33,7 @@ const CarruselTV = () => {
           {series.map((serie) => (
             <Link
               key={serie.id}
-              to={`/serienseite/${serie.id}`} // Verlinken zur Serienseite
+              to={`/filmrausch/serienseite/${serie.id}`}
               className={styles.gridItemContent}
             >
               <div className={styles.gridItem}>

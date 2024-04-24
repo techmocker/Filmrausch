@@ -11,19 +11,19 @@ function Footer() {
         <nav>
           <ul>
             <li>
-              <Link to="/">StartSeite</Link>
+              <Link to="/filmrausch/">StartSeite</Link>
             </li>
             <li>
-              <Link to="/Filme">Filme</Link>
+              <Link to="/filmrausch/Filme">Filme</Link>
             </li>
             <li>
               <p>&copy; {fechaActual} Filmrausch</p>
             </li>
             <li>
-              <Link to="/Serien">Serien</Link>
+              <Link to="/filmrausch/Serien">Serien</Link>
             </li>
             <li>
-              <Link to="/Impressum">Impressum</Link>
+              <Link to="/filmrausch/Impressum">Impressum</Link>
             </li>
           </ul>
         </nav>

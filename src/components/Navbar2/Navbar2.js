@@ -15,22 +15,22 @@ const Navbar2 = () => {
     {
       icon: faHome,
       name: "Startseite",
-      link: "/",
+      link: "/Filmrausch/",
     },
     {
       icon: faFilm,
       name: "Filme",
-      link: "/filme",
+      link: "Filmrausch/filme",
     },
     {
       icon: faTv,
       name: "Serien",
-      link: "/serien",
+      link: "Filmrausch/serien",
     },
     {
       icon: faSearch,
       name: "Suche",
-      link: "/suche",
+      link: "Filmrausch/suche",
     },
   ];
 
@@ -38,7 +38,7 @@ const Navbar2 = () => {
   const favoritesData = isLoggedIn ? [{
     icon: faStar,
     name: "Favoriten",
-    link: `/favoriten/${userId}`,
+    link: `Filmrausch/favoriten/${userId}`,
   }] : [];
 
   

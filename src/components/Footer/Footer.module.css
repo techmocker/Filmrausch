@@ -28,3 +28,29 @@ li {
   display: flex;
   justify-content: space-evenly;
 }
+
+
+/* Media Queries für die mobile Ansicht */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr; /* Ändern auf eine einzelne Spalte */
+    gap: 10px; /* Hinzufügen eines Abstands zwischen den Elementen */
+    text-align: center; /* Zentrieren des Textes */
+  }
+
+  li {
+    display: block; /* Ändern des Anzeigetyps auf block, um Elemente untereinander anzuordnen */
+    margin-bottom: 10px; /* Hinzufügen eines Abstands zwischen den Elementen */
+  }
+
+  footer p {
+    display: none; /* Ausblenden des <p> Elements im Footer */
+  }
+}

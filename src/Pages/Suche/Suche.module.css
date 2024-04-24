@@ -136,3 +136,77 @@
     box-shadow: rgba(2, 252, 210, 0.785) 0px 0 10px;
   }
   
+/* Media Queries für die mobile Ansicht */
+@media screen and (max-width: 768px) {
+  .row {
+    width: 90%;
+  }
+
+  .movieapp {
+    width: 90%;
+  }
+
+  .movieapp h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .introH1 {
+    width: 80%;
+    min-width: 80%;
+  }
+
+  .searchDiv {
+    margin-top: 10%;
+  }
+
+  .formControl {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .title {
+    display: flex;
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+  .beschreibung {
+    padding: 5px;
+  }
+
+  .titleContainer {
+    height: 40px;
+  }
+
+  .releasedateContainer {
+    margin-top: 40px;
+    font-size: 10px;
+  }
+
+  .gridItem {
+    margin-top: 10px;
+    width: 70%; /* Ändern der Breite, um Platz für zwei Filme nebeneinander zu schaffen */
+  }
+
+  .gridItem img {
+    height: auto; /* Anpassen der Höhe, um das Seitenverhältnis beizubehalten */
+    max-width: 100%; /* Maximale Breite auf die Größe des Containers beschränken */
+    border-radius: 5px;
+  }
+
+  .gridItemContent {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+  }
+
+  .gridContainer {
+    width: 95%;
+    gap: 10px;
+    display: flex; /* Ändern der Anzeige auf flex, um die Filme nebeneinander anzuordnen */
+    flex-wrap: wrap; /* Elemente automatisch umbrechen, um sie auf einer Linie anzuordnen */
+    justify-content: space-between; /* Platzieren der Elemente mit gleichem Abstand dazwischen */
+  }
+}

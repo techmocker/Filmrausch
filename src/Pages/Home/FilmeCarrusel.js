@@ -35,7 +35,7 @@ const FilmeCarrusel = () => {
           {movies.map((movie, index) => (
             <Link
               key={movie.id}
-              to={`/filmseite/${movie.id}`} // Verlinken zur Filmseite
+              to={`/filmrausch/filmseite/${movie.id}`} // Verlinken zur Filmseite
               className={`${styles.gridItemContent} ${
                 index === currentIndex ? styles.active : ""
               }`}

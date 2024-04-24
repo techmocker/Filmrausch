@@ -5,13 +5,14 @@
   text-shadow: rgb(255, 204, 0) 3px 0 10px;
   padding: 20px;
   margin: 20px auto 1px;
+  font-size: 20px;
 }
 
 .introH1 {
   border: 1px solid rgba(85, 85, 85, 0.3);
   border-radius: 5px;
   box-shadow: rgb(255, 204, 0) 3px 0 10px;
-  padding-top: 10px;
+  padding-top: 1px;
   max-width: 40%; 
   margin: 0 auto;
 }
@@ -23,12 +24,13 @@
 
 /* Estilos del carrusel */
 .carruselContainer {
-  width: 60%;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  display: flex; /* Utilizar flexbox para el contenedor principal */
-  gap: 20px; /* Espacio entre elementos */
-  padding: 2%; /* Ajustar el relleno según sea necesario */
-}
+    width: 100%;
+    overflow-x: auto; /* Scrollen erlauben */
+    display: flex; /* Flexbox verwenden */
+    gap: 10px; /* Abstand zwischen Elementen */
+    padding: 2%; /* Innenabstand anpassen */
+  }
+
 
 .carruselContainer::-webkit-scrollbar-thumb {
   background-color: rgba(211, 176, 36, 0.699);
@@ -38,64 +40,100 @@
 
 /* Estilos de los elementos del carrusel */
 .gridItemContent {
-  flex: 0 0 auto; /* Evitar que los elementos se expandan para ajustarse */
-  width: 200px; /* Ancho fijo de cada elemento */
+  flex: 0 0 auto;
+  width: 150px; /* Anpassen der Breite der Grid-Elemente */
   background-color: rgba(85, 85, 85, 0.3);
   margin-top: 20px;
   display: flex;
-  flex-direction: column; /* Cambiar dirección de la flexbox a columna */
-  align-items: center; /* Alinear elementos al centro */
+  flex-direction: column;
+  align-items: center;
   border-radius: 5px;
-  border: 0.5px solid rgba(211, 176, 36, 0.699);
-  color: inherit !important; /* Behält die Standardfarbe des Textes bei */
-  text-decoration: none !important; /* Entfernt die Unterstreichung */
+  border: 0.5px solid rgba(40, 252, 2, 0.514);
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.beschreibung {
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinear elementos al centro */
+}
+
+.gridItem img {
+  max-width: 100%; /* Die Breite des Bildes wird auf die Breite des Elternelements beschränkt */
+  max-height: 100%; /* Die Höhe des Bildes wird auf die Höhe des Elternelements beschränkt */
+  border-radius: 5px;
 }
 
 .gridItem {
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 20px;
+  position: relative; /* Position relativ für absolute Positionierung des Bildes */
+  width: 100px; /* Breite des Grid-Elements */
+  height: 170px; /* Höhe des Grid-Elements */
+  overflow: hidden; /* Überlauf verstecken, um das Bild innerhalb des Rahmens zu halten */
 }
 
 .gridItemContent:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 0.3s ease;
-  box-shadow: rgba(211, 176, 36, 0.699) 0px 0 10px;
+  box-shadow: rgba(40, 252, 2, 0.785) 0px 0 10px;
 }
 
 .gridContainer {
   margin: 0 auto;
-  width: 80%;
-  display: flex; /* Utilizar flexbox para el contenedor principal */
-  flex-wrap: nowrap; /* No permitir que se envuelva en filas */
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  gap: 20px; /* Espacio entre elementos */
+  width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
   padding: 1%;
-  justify-content: flex-start; /* Alinear elementos a la izquierda */
+  justify-content: flex-start;
 }
 
 /* Estilos de la imagen */
 .gridItem img {
-  height: 250px;
-  border-radius: 5px;
+  position: absolute; /* Position absolut, um das Bild innerhalb des Grid-Elements zu positionieren */
+  top: 0; /* Bild oben ausrichten */
+  left: 0; /* Bild links ausrichten */
+  right: 0; /* Bild rechts ausrichten */
+  bottom: 0; /* Bild unten ausrichten */
+  margin: auto; /* Zentrierung des Bildes */
 }
 
 /* Estilos del título */
 .titleContainer {
-  color: #ffffff;
+  width: 100%;
   text-align: center;
   height: 50px;
 }
 
 /* Estilos de la fecha */
 .releasedateContainer {
+  width: 100%;
   text-align: center;
+  margin-top: 5px;
 }
 
 /* Estilos para el estado activo del elemento del carrusel */
 .active {
   transform: scale(1.1);
   z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+    width: 100%; /* Volle Breite auf kleineren Bildschirmen */
+    padding: 1%; /* Weniger Innenabstand */
+  }
+
+  .gridItemContent {
+    width: 120px; /* Kleinere Breite für kleinere Bildschirme */
+  }
+}
+.gridContainer {
+  width: 100%; /* Volle Breite auf kleinen Bildschirmen */
+  padding: 1%; /* Weniger Innenabstand */
 }
