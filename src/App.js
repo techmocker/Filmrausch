@@ -34,15 +34,15 @@ const App = () => {
             <Header />
             <Navbar2 />
             <Routes>
-              <Route path="/filmrausch/" element={<Startseite />} exact />
-              <Route path="/filmrausch/filme" element={<Filme />} />
-              <Route path="/filmrausch/serien" element={<Serien />} />
-              <Route path="/filmrausch/suche" element={<Suche />} />
-              <Route path="/filmrausch/filmseite/:id" element={<Filmseite />} />
-              <Route path="/filmrausch/serienseite/:id" element={<Serienseite />} />
-              <Route path="/filmrausch/favoriten/:userId" element={<Favoriten />} />
-              <Route path="/filmrausch/impressum" element={<Impressum />} />
-              <Route path="/filmrausch/*" element={<Error />} />
+              <Route path="/" element={<Startseite />} exact />
+              <Route path="/filme" element={<Filme />} />
+              <Route path="/serien" element={<Serien />} />
+              <Route path="/suche" element={<Suche />} />
+              <Route path="/filmseite/:id" element={<Filmseite />} />
+              <Route path="/serienseite/:id" element={<Serienseite />} />
+              <Route path="/favoriten/:userId" element={<Favoriten />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
           </>
