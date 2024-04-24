@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e07e7172.css",
+    "main.js": "/static/js/main.723b3b2d.js",
+    "static/js/453.7e51e35a.chunk.js": "/static/js/453.7e51e35a.chunk.js",
+    "static/media/pageloader.mp4": "/static/media/pageloader.71f68b8de1479aa8724d.mp4",
+    "static/media/home2.jpg": "/static/media/home2.2140ec3a328fb6035a95.jpg",
+    "static/media/trebuc.ttf": "/static/media/trebuc.8dc5d2dd53924baa495c.ttf",
+    "index.html": "/index.html",
+    "main.e07e7172.css.map": "/static/css/main.e07e7172.css.map",
+    "main.723b3b2d.js.map": "/static/js/main.723b3b2d.js.map",
+    "453.7e51e35a.chunk.js.map": "/static/js/453.7e51e35a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e07e7172.css",
+    "static/js/main.723b3b2d.js"
+  ]
+}
