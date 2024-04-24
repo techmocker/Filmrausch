@@ -1,0 +1,60 @@
+.impressum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.section {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9c7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.section hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.content h3 {
+  font-size: 18px;
+  color: #666;
+}
+
+.content p {
+  font-size: 16px;
+  color: #888;
+}
+
+.platform {
+  margin-top: 40px;
+}
+
+.platform h2 {
+  font-size: 24px;
+  color: #686868;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.platform p {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
