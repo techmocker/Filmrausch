@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import Loginbar from "../Loginbar/Loginbar";
+import Loginbar from "../../Loginbar/Loginbar";
 
 const Header = () =>  {
     return (
